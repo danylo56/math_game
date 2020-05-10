@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <title>Math Game</title>
+</head>
+<body>
+  <div class="container">
+    <div class="task">
+      <h1 id="text">92.827 * 100 = ?</h1>
+    </div>
+    <hr>
+    <div class="answers">
+      <form action="" id="form">
+        <div class="option">
+          <input class="radio" type="radio" name="choice" id="1">
+          <label for="1" id="1_text" class="h2"></label>
+        </div>
+        <div class="option">
+          <input class="radio" type="radio" name="choice" id="2">
+          <label for="2" id="2_text" class="h2"></label>
+        </div>
+        <div class="option">
+          <input class="radio" type="radio" name="choice" id="3">
+          <label for="3" id="3_text" class="h2"></label>
+        </div>
+        <div class="option">
+          <input class="radio" type="radio" name="choice" id="4">
+          <label for="4" id="4_text" class="h2"></label>
+        </div>
+        <input type="number" name="" value="" style="visibility:hidden">
+
+        <input class="btn btn-outline-success col-sm-12 col-md-4" id="submit" type="submit" value="Відповісти">
+      </form>
+      
+    </div>
+    <div class="col-12 alert" id="result">
+      <form>
+        <h1 id="answer"></h1>
+        <h3 id="info"></h3>
+        <br><br>
+        <input class="btn btn-lg" type="submit" id="resultSubmit" value="Наступний">
+      </form>
+      
+  </div>
+  </div>
+</body>
+</html>

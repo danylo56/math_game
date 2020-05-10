@@ -1,0 +1,54 @@
+.task{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task h1{
+  font-size: 3em;
+}
+
+.answers form{
+  z-index: 1;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  left: -100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+
+
+.radio{
+  background: red;
+}
+.option label{
+  margin-left: 50px
+}
+
+
+@media(max-width:500px){
+  .task h1{
+    font-size: 2em;
+  }
+  .option{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+}
