@@ -78,14 +78,14 @@ $(document).ready(function () {
       $("#result").addClass('alert-success');
       $("#answer").text("Вірно");
       $("#resultSubmit").addClass('btn-outline-success');
-      //$("#result").css({"left": "0" })
+      $("#result").css({"left": "0" })
     }
     else {
       $("#result").addClass('alert-danger');
       $("#answer").text("Невірно");
       $("#info").text("Правильна відповідь: " + result);
       $("#resultSubmit").addClass('btn-outline-danger');
-      //$("#result").css({"left": "0" })
+      $("#result").css({"left": "0" })
     }
   })
 
