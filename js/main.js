@@ -72,6 +72,7 @@ $(document).ready(function () {
 
   $('#form').submit(function(e) {
     e.preventDefault()
+    $(".radio").attr("disabled");
     //console.log(this.choice.value);
     if (this.choice.value == result){
       $("#result").addClass('alert-success');
