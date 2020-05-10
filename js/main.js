@@ -72,20 +72,20 @@ $(document).ready(function () {
 
   $('#form').submit(function(e) {
     e.preventDefault()
-    $(".radio").attr("disabled");
+    $(".radio").attr("disabled", true);
     //console.log(this.choice.value);
     if (this.choice.value == result){
       $("#result").addClass('alert-success');
       $("#answer").text("Вірно");
       $("#resultSubmit").addClass('btn-outline-success');
-      $("#result").css({"left": "0" })
+      //$("#result").css({"left": "0" })
     }
     else {
       $("#result").addClass('alert-danger');
       $("#answer").text("Невірно");
       $("#info").text("Правильна відповідь: " + result);
       $("#resultSubmit").addClass('btn-outline-danger');
-      $("#result").css({"left": "0" })
+      //$("#result").css({"left": "0" })
     }
   })
 
